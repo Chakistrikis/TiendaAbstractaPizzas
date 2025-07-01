@@ -8,11 +8,8 @@ import azc.uam.app.model.queso.Queso;
 import azc.uam.app.model.salsa.Salsa;
 import azc.uam.app.view.ConsoleView;
 
-import java.util.List;
-
 public class PizzaController {
-    private FabricaIngredientesPizza fabricaIngredientesPizza;
-    private ConsoleView consoleView;
+    private final ConsoleView consoleView;
 
     public PizzaController(ConsoleView consoleView) {
         this.consoleView = consoleView;
