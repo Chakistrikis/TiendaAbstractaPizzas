@@ -8,6 +8,8 @@ import azc.uam.app.model.queso.Queso;
 import azc.uam.app.model.salsa.Salsa;
 import azc.uam.app.view.ConsoleView;
 
+import java.util.List;
+
 public class PizzaController {
     private FabricaIngredientesPizza fabricaIngredientesPizza;
     private ConsoleView consoleView;
@@ -43,9 +45,7 @@ public class PizzaController {
                             + salsa.getClass().getSimpleName() + ", "
                             + queso.getClass().getSimpleName());
                 }
-                case 3 -> {
-                    finalizarOrden = true;
-                }
+                case 3 -> finalizarOrden = true;
                 case -1 -> System.out.println("Opcion invalida.");
                 default -> System.out.println("Opcion invalida.");
             }
